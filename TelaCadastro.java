@@ -15,13 +15,12 @@ public class TelaCadastro extends JFrame {
     private JButton botaoCadastrar;
 
     public TelaCadastro() {
-        // Configurações da janela
+  
         setTitle("Cadastro de Usuário");
         setSize(400, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new GridLayout(7, 2));
 
-        // Componentes
         JLabel labelNome = new JLabel("Nome:");
         campoNome = new JTextField(20);
         JLabel labelTelefone = new JLabel("Telefone:");
@@ -61,8 +60,7 @@ public class TelaCadastro extends JFrame {
         add(campoCPF);
         add(new JLabel()); 
         add(botaoCadastrar);
-
-        // Configurar ação do botão
+        
         botaoCadastrar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
